@@ -1,0 +1,21 @@
+[project]
+name = "td-uvmanagedprefab"
+version = "0.0.1"
+
+projectfile = "Project.toe"
+
+description = "A prefab for TouchDesigner-Projects that will be complelty managed and run by UV."
+readme = "README.md"
+requires-python = "==3.11.1"
+dependencies = [
+    "python-dotenv>=1.1.1",
+]
+keywords=["TouchDesigner"]
+
+
+
+[tool.uv]
+environments = [
+    "sys_platform =='win32'",
+    "sys_platform =='darwin'"
+]
