@@ -33,7 +33,7 @@ requires-dist = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGm
 [[package]]
 name = "touchlaunch"
 version = "0.0.1"
-source = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch#9d00a1c679b9f6f7cefa6e41540108bea11d8f81" }
+source = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch#b091587ea613f777dcf02ad9118d4709a65072e2" }
 dependencies = [
     { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
