@@ -10,3 +10,13 @@ Use uv to install packages.
 
 To run the project use ```uv run main.py```
 Optionaly pass ```TouchDesigner``` or ```TouchPlayer``` as the backend.
+
+## Install UV
+https://docs.astral.sh/uv/getting-started/installation/
+
+## ENV-Variables
+Currently the stratupscript looks in the default install-location and expects the folder to have the build-number. 
+You can supply additional search paths by setting ```TD_INSTALLSEARCHPATH``` as a : delimited string. 
+
+.env files will be mounted before TouchDesigner starts.
+
