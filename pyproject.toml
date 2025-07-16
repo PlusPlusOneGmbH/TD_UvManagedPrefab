@@ -12,7 +12,7 @@ keywords=["TouchDesigner"]
 
 [tool.touchdesigner]
 projectfile = "Project.toe"
-enforce-version="strict" # Options: strict, closest-build, latest-build, latest-version
+enforce-version="closest-build" # Options: strict, closest-build, latest-build, latest-version
 
 [tool.uv]
 environments = [
