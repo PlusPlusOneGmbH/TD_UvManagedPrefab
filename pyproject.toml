@@ -8,7 +8,7 @@ description = "A prefab for TouchDesigner-Projects that will be complelty manage
 readme = "README.md"
 requires-python = "==3.11.1"
 dependencies = [
-    "python-dotenv>=1.1.1",
+    "touchlaunch",
 ]
 keywords=["TouchDesigner"]
 
@@ -19,4 +19,12 @@ environments = [
     "sys_platform =='win32'",
     "sys_platform =='darwin'"
 ]
+
+[tool.uv.sources]
+touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
+
+[project.scripts]
+designer = "touchlaunch:designer"
+edit = "touchlaunch:designer"
+player = "touchlaunch:player"
 

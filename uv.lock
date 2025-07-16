@@ -24,8 +24,16 @@ name = "td-uvmanagedprefab"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [
-    { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
+    { name = "touchlaunch", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "python-dotenv", specifier = ">=1.1.1" }]
+requires-dist = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }]
+
+[[package]]
+name = "touchlaunch"
+version = "0.0.1"
+source = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch#ab2114e314e17d2df36f34fc82e547d3283d97da" }
+dependencies = [
+    { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
+]
