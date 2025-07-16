@@ -2,8 +2,6 @@
 name = "td-uvmanagedprefab"
 version = "0.0.1"
 
-projectfile = "Project.toe"
-
 description = "A prefab for TouchDesigner-Projects that will be complelty managed and run by UV."
 readme = "README.md"
 requires-python = "==3.11.1"
@@ -12,7 +10,9 @@ dependencies = [
 ]
 keywords=["TouchDesigner"]
 
-
+[tool.touchdesigner]
+projectfile = "Project.toe"
+enforce-version="strict" # Options: strict, closest-build, latest-build, latest-version
 
 [tool.uv]
 environments = [
