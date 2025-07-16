@@ -9,6 +9,7 @@ readme = "README.md"
 requires-python = "==3.11.1"
 dependencies = [
     "python-dotenv>=1.1.1",
+    "tdp-queriedwebclient>=1.11",
 ]
 keywords=["TouchDesigner"]
 
@@ -20,3 +21,13 @@ environments = [
     "sys_platform =='darwin'"
 ]
 
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple/"
+
+[[tool.uv.index]]
+name = "pypi-test"
+url = "https://test.pypi.org/simple/"
+
+[tool.uv.sources]
+tdp-queriedWebclient = { index = "pypi-test" }
