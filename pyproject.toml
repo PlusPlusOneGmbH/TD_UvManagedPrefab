@@ -24,7 +24,4 @@ environments = [
 touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
 
 [project.scripts]
-designer = "touchlaunch:designer"
-edit = "touchlaunch:designer"
-player = "touchlaunch:player"
-
+designer = "touchlaunch.launcher:editor"
