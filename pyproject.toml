@@ -6,6 +6,7 @@ description = "A prefab for TouchDesigner-Projects that will be complelty manage
 readme = "README.md"
 requires-python = "==3.11.1"
 dependencies = [
+    "td-examplepackage",
     "touchlaunch",
 ]
 keywords=["TouchDesigner"]
@@ -22,5 +23,6 @@ environments = [
 
 [tool.uv.sources]
 touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
+td-examplepackage = { git = "https://github.com/PlusPlusOneGmbH/TD_ExamplePackage" }
 
 
