@@ -33,6 +33,17 @@ enforce-version="closest-build"
 ## Install UV
 https://docs.astral.sh/uv/getting-started/installation/
 
+## TDP Packages
+Check https://github.com/PlusPlusOneGmbH/TD_Package for an example how a TouchDesigner specific package could look like. 
+
+For this we can run:
+```uv add git+https://github.com/PlusPlusOneGmbH/TD_Package#subdirectory=Packages/ExampleComp``` 
+And then use
+```mod.ExampleComp.ToxFile```
+
+Note: This specific comp is made in 2025 as it adds typing, but can also work in 2023. Check the Experimental-Branch for direct example with this packeg.
+
+
 ## ENV-Variables
 Currently the script looks in the default install-location and expects the folder to have the build-number. 
 You can supply additional search paths by setting ```TD_INSTALLSEARCHPATH``` as a : delimited string. 
