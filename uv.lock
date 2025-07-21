@@ -20,24 +20,15 @@ wheels = [
 ]
 
 [[package]]
-name = "td-examplepackage"
-version = "0.1.0"
-source = { git = "https://github.com/PlusPlusOneGmbH/TD_ExamplePackage#0f7d369a163c7e1546a6e9cdf30d27a74636aa41" }
-
-[[package]]
 name = "td-uvmanagedprefab"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [
-    { name = "td-examplepackage", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
     { name = "touchlaunch", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "td-examplepackage", git = "https://github.com/PlusPlusOneGmbH/TD_ExamplePackage" },
-    { name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" },
-]
+requires-dist = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }]
 
 [[package]]
 name = "touchlaunch"
