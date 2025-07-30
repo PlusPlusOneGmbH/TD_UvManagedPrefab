@@ -20,6 +20,11 @@ wheels = [
 ]
 
 [[package]]
+name = "py-touchutilcollection"
+version = "0.1.0"
+source = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection#81ec6d348e15e200336149a7dfa5ad49cf0cffee" }
+
+[[package]]
 name = "pydantic"
 version = "2.11.7"
 source = { registry = "https://pypi.org/simple" }
@@ -67,6 +72,7 @@ name = "td-uvmanagedprefab"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [
+    { name = "py-touchutilcollection", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
     { name = "tdp-examplecomp", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
     { name = "touchlaunch", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
     { name = "typing-extensions", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
@@ -74,6 +80,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "py-touchutilcollection", git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection" },
     { name = "tdp-examplecomp", git = "https://github.com/PlusPlusOneGmbH/TD_Package?subdirectory=Packages%2FExampleComp" },
     { name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" },
     { name = "typing-extensions", specifier = ">=4.14.1" },

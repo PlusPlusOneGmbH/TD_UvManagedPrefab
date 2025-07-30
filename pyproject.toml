@@ -6,6 +6,7 @@ description = "A prefab for TouchDesigner-Projects that will be complelty manage
 readme = "README.md"
 requires-python = "==3.11.1"
 dependencies = [
+    "py-touchutilcollection",
     "tdp-examplecomp",
     "touchlaunch",
     "typing-extensions>=4.14.1",
@@ -25,4 +26,5 @@ environments = [
 [tool.uv.sources]
 touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
 tdp-examplecomp = { git = "https://github.com/PlusPlusOneGmbH/TD_Package", subdirectory = "Packages/ExampleComp" }
+py-touchutilcollection = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection" }
 
