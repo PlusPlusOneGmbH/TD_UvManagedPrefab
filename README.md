@@ -1,6 +1,10 @@
 # TD UV Prefab
 This is a baseproject that shows how UV can be used as the project- and dependency-manager for TouchDesigner.
 
+It uses a hack to mount the package-folders defined in the .packagefolder-file just in time, without any raceconditions. [ Blogpost coming ]
+
+Check /local/modules as it could be used for any dependency manager. I just like UV most.
+
 ## Install UV
 https://docs.astral.sh/uv/getting-started/installation/
 
