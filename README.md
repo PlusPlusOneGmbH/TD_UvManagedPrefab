@@ -1,39 +1,15 @@
 # TD UV Prefab
 This is a baseproject that shows how UV can be used as the project- and dependency-manager for TouchDesigner.
-This prefab contains some automated setup running from TD for .vscode
 
-## How to
-Use uv to install packages.
-```uv add $package```
-
-To run the project use 
-
-```uv run edit``` to launch TouchDesigner
-
-```uv run designer``` to launch TouchDesigner and set NODE_ENV to production
-
-```uv run player``` to launch TouchPlayer and set NODE_ENV to production
-
-To setup a good vscode settings, run ```uv run setup_code``` which will create links to all important libs defined in the .packagefolder and set the defaultInterpreter.
-
-The touchlauncher package will use the .touchdesigner-version file to determin the correct TouchDesigner-Installation and path.
-The behavior can be defined via the pyproject.toml
-```toml
-[tool.touchdesigner]
-# Define the projectfile. Should sit in the root-dir of the project.
-projectfile = "Project.toe"
-
-# Defines the behaviour how the TD-Install should be searched for 
-enforce-version="closest-build"
-# Options: ( for example we use the following: Set Version: 2300.12000. Available Version [2025.1000, 2023.2000, 2023.4000]
-# strict : looks for the exact version set in the .touchdesigner-version file. 
-# closest-build : looks for the closes build to the set version while ignoring other versions. - Example: Will pick 2023.2000
-# latest-build : looks for the latest build in the same version. - Example: Will pick 2023.4000
-# latest-version : simply takes the latest available installed version. Def not suggestes! - Example: Will pick 2025.1000
-
-```
 ## Install UV
 https://docs.astral.sh/uv/getting-started/installation/
+
+## TouchLaunch
+This packkages implements https://github.com/PlusPlusOneGmbH/Py_TD_Launch
+Use ```uv run edit``` to start TD.
+
+Check docks for pyproject.toml settings and additional commands.
+
 
 ## TDP Packages
 Check https://github.com/PlusPlusOneGmbH/TD_Package for an example how a TouchDesigner specific package could look like. 
@@ -44,10 +20,4 @@ And then use
 ```mod.ExampleComp.ToxFile```
 
 Note: This specific comp is made in 2025 as it adds typing, but can also work in 2023. Check the Experimental-Branch for direct example with this packeg.
-
-
-## ENV-Variables
-Currently the script looks in the default install-location and expects the folder to have the build-number. 
-You can supply additional search paths by setting ```TD_INSTALLSEARCHPATH``` as a : delimited string. 
-.env files will be mounted before TouchDesigner starts.
 
