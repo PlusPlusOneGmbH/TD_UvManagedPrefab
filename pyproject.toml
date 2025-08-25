@@ -1,18 +1,11 @@
 [project]
 name = "td-uvmanagedprefab"
 version = "0.0.1"
-
 description = "A prefab for TouchDesigner-Projects that will be complelty managed and run by UV."
 readme = "README.md"
 requires-python = "==3.11.1"
-dependencies = [
-    "touchlaunch",
-]
+dependencies = []
 keywords=["TouchDesigner"]
-
-[tool.touchdesigner]
-projectfile = "Project.toe"
-enforce-version="closest-build" # Options: strict, closest-build, latest-build, latest-version
 
 [tool.uv]
 environments = [
@@ -23,3 +16,25 @@ environments = [
 [tool.uv.sources]
 touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
 
+## Dev Dependencies.
+[dependency-groups]
+dev = [
+    "touchlaunch",
+]
+
+## TouchLaucnh Settings
+[tool.touchdesigner]
+projectfile = "Project.toe"
+enforce-version="closest-build" # Options: strict, closest-build, latest-build, latest-version
+
+## Package Requirements
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"] # Or any folder where the packeg-structure resides on.
+
+[tool.setuptools.package-data]
+"*" = ["*.tox"]
