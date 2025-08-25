@@ -15,13 +15,13 @@ Use ```uv run edit``` to start TD.
 Check docks for pyproject.toml settings and additional commands.
 
 
-## TDP Packages
-Check https://github.com/PlusPlusOneGmbH/TD_Package for an example how a TouchDesigner specific package could look like. 
+## Developing a package
+This project can, to some extend even be used as the basis of a TouchDesigner Package. 
 
-For this we can run:
-```uv add git+https://github.com/PlusPlusOneGmbH/TD_Package#subdirectory=Packages/ExampleComp``` 
-And then use
-```mod.ExampleComp.ToxFile```
+For this to work, you need to externalize all important data in to a subdirectory like ```src/PackageName``` which contains an ```__init__.py``` file. 
 
-Note: This specific comp is made in 2025 as it adds typing, but can also work in 2023. Check the Experimental-Branch for direct example with this packeg.
+As an example you can check out the current DevBranch of the TauCeti Repository. 
+[TauCeti PresetSystem on Github.com](https://github.com/PlusPlusOneGmbH/TD_TauCeti_Presetsystem/tree/dev)
 
+The package follows the same structure as a default python package. This means you can follow almost any guide for simple python packages. Also, this package then could be published to PyPI.
+[Packaging PythonProject on Python.org](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
