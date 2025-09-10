@@ -11,6 +11,14 @@ supported-markers = [
 ]
 
 [[package]]
+name = "monkeybrain"
+version = "0.2.1"
+source = { git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain#025cb95c2d52c0b10b91460184d2df8a6878ae39" }
+dependencies = [
+    { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
+]
+
+[[package]]
 name = "python-dotenv"
 version = "1.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -23,21 +31,22 @@ wheels = [
 name = "td-uvmanagedprefab"
 version = "0.0.1"
 source = { virtual = "." }
+dependencies = [
+    { name = "touchutilcollection", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
+]
 
 [package.dev-dependencies]
 dev = [
-    { name = "touchlaunch", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
+    { name = "monkeybrain", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
 
 [package.metadata]
+requires-dist = [{ name = "touchutilcollection", git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }]
+dev = [{ name = "monkeybrain", git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain" }]
 
 [[package]]
-name = "touchlaunch"
-version = "0.2.1"
-source = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch#08e4bdbbe05fc200c87d6b84c99b8448bf0623e6" }
-dependencies = [
-    { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
-]
+name = "touchutilcollection"
+version = "0.4.0"
+source = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection#a5e6667ef0ac43999f83580b26ef0bff21df8c96" }

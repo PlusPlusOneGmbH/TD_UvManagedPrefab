@@ -7,7 +7,9 @@ keywords=["TouchDesigner"]
 authors = []                    # Required for PyPi-Publishing
 license-files = ["LICENSE"]     # Do not forgot to adjust ;)
 requires-python = "==3.11.1"
-dependencies = []
+dependencies = [
+    "touchutilcollection",
+]
 
 [tool.uv]
 environments = [
@@ -16,12 +18,13 @@ environments = [
 ]
 
 [tool.uv.sources]
-touchlaunch = { git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }
+monkeybrain = { git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain" }
+touchutilcollection = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection" }
 
 ## Dev Dependencies.
 [dependency-groups]
 dev = [
-    "touchlaunch",
+    "monkeybrain",
 ]
 
 ## TouchLaucnh Settings

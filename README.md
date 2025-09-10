@@ -8,9 +8,9 @@ Check /local/modules as it could be used for any dependency manager. I just like
 ## Install UV
 https://docs.astral.sh/uv/getting-started/installation/
 
-## TouchLaunch
-This packkages implements https://github.com/PlusPlusOneGmbH/Py_TD_Launch
-Use ```uv run edit``` to start TD.
+## MonkeyBrain
+This packkages implements https://github.com/PlusPlusOneGmbH/MonkeyBrain
+Use ```uv run mb edit``` to start TD.
 
 Check docks for pyproject.toml settings and additional commands.
 
