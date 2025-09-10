@@ -23,12 +23,16 @@ wheels = [
 name = "td-uvmanagedprefab"
 version = "0.0.1"
 source = { virtual = "." }
-dependencies = [
+
+[package.dev-dependencies]
+dev = [
     { name = "touchlaunch", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "touchlaunch", git = "https://github.com/PlusPlusOneGmbH/Py_TD_Launch" }]
 
 [[package]]
 name = "touchlaunch"
