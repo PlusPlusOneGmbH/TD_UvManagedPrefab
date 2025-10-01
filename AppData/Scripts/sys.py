@@ -1,5 +1,9 @@
 import sys as __surely_not_even_close_to_sys
 
+# This is a hack that allows us to overwrite the default beavhiour of the sys module.
+# By hijacking the import of sys on import, we can inject custom paths without having 
+# to rely on any order of init that is the big problem with any current teached approach.
+
 def _setup_path_from_packagefolder():
     import os, re
     from sys import path
@@ -10,6 +14,8 @@ def _setup_path_from_packagefolder():
     # Regex to find ${...} and replace using the dictionary
     
     with open(".packagefolder", "a+t") as package_folder_file:
+        # Lets read the .packagefolder and add specified elements. 
+        # Monkeybrain uv run mb init.files will create this, otherwise it will simply be empty.
         package_folder_file.seek(0)
         for _line in reversed( package_folder_file.readlines() ):
             line = _line.strip()
@@ -31,6 +37,8 @@ _setup_path_from_packagefolder()
 del _setup_path_from_packagefolder
 
 for module_name in dir( __surely_not_even_close_to_sys ):
+    # If we would just import *, we would not import all modules but only ones not preficed with _
     locals()[ module_name ] = getattr( __surely_not_even_close_to_sys, module_name )
 
+# Some cleanup.
 del __surely_not_even_close_to_sys
