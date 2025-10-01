@@ -12,7 +12,6 @@ wheels/
 # TD-Generated or localy defined files
 .vscode/settings.json
 TDImportCache
-UserData
 logs
 
 # Assets

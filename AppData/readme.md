@@ -1,0 +1,2 @@
+## AppData
+Contains external data that is inherint to the project and will be comitted to the repository, but should not be part of the project itself. This contains startupscripts, hacks and co. Primarily this should increade readbility and allow for updates and changed without having to touch the projectfile itself.
