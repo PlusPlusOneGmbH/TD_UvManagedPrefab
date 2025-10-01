@@ -3,5 +3,5 @@
 # ${ gets converted in to ENV-Variable. }
 ${UV_PROJECT_ENVIRONMENT}/Lib/site-packages
 
-project_packages
+project-packages
 .venv/Lib/site-packages
