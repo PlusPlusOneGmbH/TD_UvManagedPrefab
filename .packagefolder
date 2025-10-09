@@ -1,7 +1,6 @@
 # Lines starting with # will be ignored as comments.
 
 # ${ gets converted in to ENV-Variable. }
-${UV_PROJECT_ENVIRONMENT}/Lib/site-packages
-
+# Use || to define a default value.
+${UV_PROJECT_ENVIRONMENT||.venv}/Lib/site-packages
 project-packages
-.venv/Lib/site-packages
