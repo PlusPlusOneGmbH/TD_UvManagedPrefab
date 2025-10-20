@@ -1,6 +1,6 @@
 version = 1
-revision = 2
-requires-python = "==3.11.1"
+revision = 3
+requires-python = ">=3.11"
 resolution-markers = [
     "sys_platform == 'win32'",
     "sys_platform == 'darwin'",
@@ -13,7 +13,7 @@ supported-markers = [
 [[package]]
 name = "monkeybrain"
 version = "0.2.1"
-source = { git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain#025cb95c2d52c0b10b91460184d2df8a6878ae39" }
+source = { git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain#9f31e8a4ccd5b7b21ace3c86ad3e646dab815f9a" }
 dependencies = [
     { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
@@ -49,4 +49,4 @@ dev = [{ name = "monkeybrain", git = "https://github.com/PlusPlusOneGmbH/MonkeyB
 [[package]]
 name = "touchutilcollection"
 version = "0.4.0"
-source = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection#a5e6667ef0ac43999f83580b26ef0bff21df8c96" }
+source = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection#819ebe922978b9d01b75cf141e1596621b60fd24" }

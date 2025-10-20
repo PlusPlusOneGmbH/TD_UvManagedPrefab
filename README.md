@@ -8,6 +8,9 @@ Check /local/modules as it could be used for any dependency manager. I just like
 ## Install UV
 https://docs.astral.sh/uv/getting-started/installation/
 
+## Python Version
+Make sure to set the correct python version in .python-version and/or .touchdesigner-version.
+
 ## MonkeyBrain
 This packkages implements https://github.com/PlusPlusOneGmbH/MonkeyBrain
 Use ```uv run mb edit``` to start TD.

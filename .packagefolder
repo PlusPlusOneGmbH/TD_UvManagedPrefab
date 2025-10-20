@@ -3,4 +3,5 @@
 # ${ gets converted in to ENV-Variable. }
 # Use || to define a default value.
 ${UV_PROJECT_ENVIRONMENT||.venv}/Lib/site-packages
-project-packages
+
+src
