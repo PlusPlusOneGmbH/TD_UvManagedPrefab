@@ -8,7 +8,7 @@ authors = []                    # Required for PyPi-Publishing
 license-files = ["LICENSE"]     # Do not forgot to adjust ;)
 requires-python = ">=3.11"
 dependencies = [
-    "touchutilcollection",
+    "tdp-touchutilcollection>=0.4.0",
 ]
 
 [tool.uv]
@@ -17,14 +17,10 @@ environments = [
     "sys_platform =='darwin'"
 ]
 
-[tool.uv.sources]
-monkeybrain = { git = "https://github.com/PlusPlusOneGmbH/MonkeyBrain" }
-touchutilcollection = { git = "https://github.com/PlusPlusOneGmbH/Py_TouchUtilCollection" }
-
 ## Dev Dependencies.
 [dependency-groups]
 dev = [
-    "monkeybrain",
+    "monkeybrain>=0.2.3",
 ]
 
 ## TouchLaucnh Settings
