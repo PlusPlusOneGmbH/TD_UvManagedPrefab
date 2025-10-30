@@ -26,7 +26,7 @@ dev = [
 ## TouchLaucnh Settings
 [tool.touchdesigner]
 projectfile = "Project.toe"     # Adjust if you rename the base project.
-enforce-version="closest-build" # Options: strict, closest-build, latest-build, latest-version
+enforce-version="latest-build" # Options: strict, closest-build, latest-build, latest-version
 
 ## Package Requirements
 # Uncomment for Package-Development!
