@@ -12,23 +12,23 @@ supported-markers = [
 
 [[package]]
 name = "monkeybrain"
-version = "0.2.3"
+version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "python-dotenv", marker = "sys_platform == 'darwin' or sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/78/5db40539cd63a2497470dd3462a5b2264d5540c4d5770380d58002f11df8/monkeybrain-0.2.3.tar.gz", hash = "sha256:f627a08f037397e082867f9cf722731a1bddc02d05b9e832d72e7f3467b306a0", size = 5297, upload-time = "2025-10-21T13:42:00.551Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b7/23/dfa6565573c81d85baa5bfe1eeeb85d34455adb77646ca0aa77c46a8a599/monkeybrain-0.2.4.tar.gz", hash = "sha256:b2c7474dcc50e46dba83548ee51eef13ac94be57f8d13a20c230fbd3d27f3b37", size = 5407, upload-time = "2025-11-24T09:05:34.039Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/66/56d7ecf6bc5f60f88e57e842da2249e38dfa2d67b5f1b8f1a8a503de9f67/monkeybrain-0.2.3-py3-none-any.whl", hash = "sha256:9b1f4de8575fa60ccc17787f624b05c747844c7fee0edc119be57eaeb501406e", size = 5641, upload-time = "2025-10-21T13:41:59.005Z" },
+    { url = "https://files.pythonhosted.org/packages/ad/f4/9f87207dacbc16870b68ecef9e75bf6d01342010254f4568eb296e5edf85/monkeybrain-0.2.4-py3-none-any.whl", hash = "sha256:847f4aed036974b14fbdecee4acc13abbc980779a636af04c625032caffce64c", size = 5741, upload-time = "2025-11-24T09:05:32.959Z" },
 ]
 
 [[package]]
 name = "python-dotenv"
-version = "1.1.1"
+version = "1.2.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/f6/b0/4bc07ccd3572a2f9df7e6782f52b0c6c90dcbb803ac4a167702d7d0dfe1e/python_dotenv-1.1.1.tar.gz", hash = "sha256:a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab", size = 41978, upload-time = "2025-06-24T04:21:07.341Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/f0/26/19cadc79a718c5edbec86fd4919a6b6d3f681039a2f6d66d14be94e75fb9/python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6", size = 44221, upload-time = "2025-10-26T15:12:10.434Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5f/ed/539768cf28c661b5b068d66d96a2f155c4971a5d55684a514c1a0e0dec2f/python_dotenv-1.1.1-py3-none-any.whl", hash = "sha256:31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc", size = 20556, upload-time = "2025-06-24T04:21:06.073Z" },
+    { url = "https://files.pythonhosted.org/packages/14/1b/a298b06749107c305e1fe0f814c6c74aea7b2f1e10989cb30f544a1b3253/python_dotenv-1.2.1-py3-none-any.whl", hash = "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61", size = 21230, upload-time = "2025-10-26T15:12:09.109Z" },
 ]
 
 [[package]]
@@ -45,16 +45,16 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "tdp-touchutilcollection", specifier = ">=0.4.0" }]
+requires-dist = [{ name = "tdp-touchutilcollection", specifier = ">=0.6.0" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "monkeybrain", specifier = ">=0.2.3" }]
+dev = [{ name = "monkeybrain", specifier = ">=0.2.4" }]
 
 [[package]]
 name = "tdp-touchutilcollection"
-version = "0.4.0"
+version = "0.6.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a7/a0/aac45fe567e913967e1de4e6c69e33d5dacfaff66b191cfafd5668c3ea63/tdp_touchutilcollection-0.4.0.tar.gz", hash = "sha256:4a2c3543d2f97e17fca737ca4de64b4807c05230ceb3174355eca13882e4efd9", size = 7278, upload-time = "2025-10-21T13:43:09.375Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/56/cbca5cfb68cc9615de7eaf5e837c5f61c201a93ec1fd6d25e95fcd069a23/tdp_touchutilcollection-0.6.0.tar.gz", hash = "sha256:540a75afc4b55f5bec360eb2979dda3b7b6b378a81ed5dc8d2bc202feecbb72c", size = 11503, upload-time = "2025-11-21T21:45:33.809Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3b/6e/c25b335b495a9407d8cc74819e219e07ad95b75b02929a4507ef5c79749f/tdp_touchutilcollection-0.4.0-py3-none-any.whl", hash = "sha256:456fb3c9e67e5388c8dbb9dac88acb05e0a3156712a950b865025bcf8fcaeef7", size = 10163, upload-time = "2025-10-21T13:43:08.398Z" },
+    { url = "https://files.pythonhosted.org/packages/33/ec/ef62c0df6f5aa5dc7f3a89bc3734050442e29efec3f86d9bd224a9333b8e/tdp_touchutilcollection-0.6.0-py3-none-any.whl", hash = "sha256:9381e4ce54b653cf75fb57fbe9473b7e1c56f1e945746cdd790d97c5bb6ceb7c", size = 15719, upload-time = "2025-11-21T21:45:32.563Z" },
 ]

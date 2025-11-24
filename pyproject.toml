@@ -8,7 +8,7 @@ authors = []                    # Required for PyPi-Publishing
 license-files = ["LICENSE"]     # Do not forgot to adjust ;)
 requires-python = ">=3.11"
 dependencies = [
-    "tdp-touchutilcollection>=0.4.0",
+    "tdp-touchutilcollection>=0.6.0",
 ]
 
 [tool.uv]
@@ -20,7 +20,7 @@ environments = [
 ## Dev Dependencies.
 [dependency-groups]
 dev = [
-    "monkeybrain>=0.2.3",
+    "monkeybrain>=0.2.4",
 ]
 
 ## TouchLaucnh Settings
